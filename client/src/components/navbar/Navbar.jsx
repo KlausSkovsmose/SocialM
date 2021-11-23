@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <div className="navbarRight">
         <span className="navbarLink">Homepage</span>
-        <span className="navbarLink">Timelineeee</span>
+        <span className="navbarLink">Timeline</span>
         <div className="navbarIcons">
           <div className="navbarIconItem">
             <Person />
