@@ -1,6 +1,8 @@
 import React from "react";
-
 import "./rightbar.css";
+
+import {Users} from "../../dummyData"
+import Online from "../online/Online";
 
 const Rightbar = () => {
   return (
@@ -17,149 +19,9 @@ const Rightbar = () => {
         <div className="onlineFriendsContainer">
           <h4 className="rightbarTitle">Online Friends</h4>
           <ul className="rightbarFriendList">
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
-            <li className="rightbarFriend">
-              <div className="rightbarProfileImgContainer">
-                <img
-                  className="rightbarProfileImg"
-                  src="/assets/ph.png"
-                  alt=""
-                />
-                <span className="rightbarOnline"></span>
-              </div>
-              <span className="rightbarUsername">Ajes Nielsen</span>
-            </li>
+            {Users.map(u=>(
+              <Online key={u.id} user={u}/>
+            ))}
           </ul>
         </div>
       </div>
