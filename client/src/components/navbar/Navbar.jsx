@@ -1,15 +1,16 @@
 import React from "react";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
+import './navbar.css'
 
 const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navbarLeft">
-        <span className="logo">Social Mediaaa</span>
+        <span className="logo">Social Media</span>
       </div>
       <div className="navbarCenter">
         <div className="searchbar">
-          <Search />
+          <Search className="searchIcon"/>
           <input
             placeholder="Search for friends, posts or videos"
             className="searchInput"
@@ -33,7 +34,7 @@ const Navbar = () => {
             <span className="navbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/" alt="" className="navbarImg" />
+        <img src="/assets/ph.png" alt="" className="navbarImg" />
       </div>
     </div>
   );
