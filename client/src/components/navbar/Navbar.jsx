@@ -1,16 +1,19 @@
 import React from "react";
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
-import './navbar.css'
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navbarLeft">
-        <span className="logo">Social Media</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Social Media</span>
+        </Link>
       </div>
       <div className="navbarCenter">
         <div className="searchbar">
-          <Search className="searchIcon"/>
+          <Search className="searchIcon" />
           <input
             placeholder="Search for friends, posts or videos"
             className="searchInput"
