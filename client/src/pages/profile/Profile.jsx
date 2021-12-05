@@ -6,6 +6,7 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import "./profile.css";
 
 const Profile = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <>
       <Navbar />
@@ -14,8 +15,8 @@ const Profile = () => {
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
-              <img className="profileCoverImg" src="/assets/ph.png" alt="" />
-              <img className="profileUserImg" src="/assets/ph.png" alt="" />
+              <img className="profileCoverImg" src={`${PF}ph.png`} alt="" />
+              <img className="profileUserImg" src={`${PF}ph.png`} alt="" />
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">My name</h4>
