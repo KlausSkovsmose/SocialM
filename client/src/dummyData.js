@@ -1,42 +1,42 @@
 export const Users = [
     {
         id:1,
-        profilePicture: "assets/tfue.jpg",
+        profilePicture: "tfue.jpg",
         username: "Ajes Nielsen",
     },
     {
         id:2,
-        profilePicture: "assets/ph.png",
+        profilePicture: "ph.png",
         username: "Torben Jensen",
     },
     {
         id:3,
-        profilePicture: "assets/ph.png",
+        profilePicture: "ph.png",
         username: "Frederik Christensen",
     },
     {
         id:4,
-        profilePicture: "assets/glassesEmoji.png",
+        profilePicture: "glassesEmoji.png",
         username: "Ib Ibsen",
     },
     {
         id:5,
-        profilePicture: "assets/ph.png",
+        profilePicture: "ph.png",
         username: "Niels Nielen",
     },
     {
         id:6,
-        profilePicture: "assets/glassesEmoji.png",
+        profilePicture: "glassesEmoji.png",
         username: "Frank Franksen",
     },
     {
         id:7,
-        profilePicture: "assets/glassesEmoji.png",
+        profilePicture: "glassesEmoji.png",
         username: "Kirsten Kirstensen",
     },
     {
         id:8,
-        profilePicture: "assets/ph.png",
+        profilePicture: "ph.png",
         username: "Marlene Marlenesen",
     },
 ]
@@ -45,7 +45,7 @@ export const Posts = [
     {
         id: 1,
         desc: "Jeg leder efter en lejlighed i nærheden af...",
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "5 mins ago",
         userId: 1,
         like: 22,
@@ -54,7 +54,7 @@ export const Posts = [
     {
         id: 2,
         desc: "I dag har jeg været ude at gå med min....",
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "23 mins ago",
         userId: 2,
         like: 222,
@@ -62,7 +62,7 @@ export const Posts = [
     },
     {
         id: 3,
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "29 mins ago",
         userId: 3,
         like: 32,
@@ -71,7 +71,7 @@ export const Posts = [
     {
         id: 4,
         desc: "Det er et godt vejr i dag!",
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "35 mins ago",
         userId: 4,
         like: 21,
@@ -80,7 +80,7 @@ export const Posts = [
     {
         id: 5,
         desc: "Lækkert mad",
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "43 mins ago",
         userId: 5,
         like: 5,
@@ -88,7 +88,7 @@ export const Posts = [
     },
     {
         id: 6,
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "59 mins ago",
         userId: 6,
         like: 18,
@@ -96,7 +96,7 @@ export const Posts = [
     },
     {
         id: 7,
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "2 days ago",
         userId: 7,
         like: 99,
@@ -105,7 +105,7 @@ export const Posts = [
     {
         id: 8,
         desc: "lolleren mand",
-        photo: "assets/ph.png",
+        photo: "ph.png",
         date: "5 days ago",
         userId: 8,
         like: 1000,
