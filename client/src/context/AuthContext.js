@@ -2,7 +2,18 @@ import { createContext, useReducer } from "react";
 import AuthReducer from "./AuthReducer";
 
 const INITIAL_STATE = {
-  user: null, // User is null because we haven't logged in yet
+  user: {
+    _id: "61ad25e165121f2422da19bd",
+    username: "klaus",
+    email: "k@k.com",
+    profilePicture: "tfue.jpg",
+    coverPicture: "",
+    isAdmin: false,
+    followers: [],
+    followings: [],
+  },
+
+  // User is null because we haven't logged in yet
   isFetching: false,
   error: false,
 };
