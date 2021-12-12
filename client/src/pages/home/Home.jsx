@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
-import Rightbar from "../../components/rightbar/Rightbar";
+import HomeRightbar from "../../components/rightbar/HomeRightBar";
 
 import './home.css'
 
@@ -13,7 +13,7 @@ const Home = () => {
       <div className="homeContainer">
         <Sidebar />
         <Feed/>
-        <Rightbar />
+        <HomeRightbar/>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
-import Rightbar from "../../components/rightbar/Rightbar";
+import ProfileRightbar from "../../components/rightbar/ProfileRightbar"
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
@@ -46,7 +46,7 @@ const Profile = () => {
           </div>
           <div className="profileRightBottom">
             <Feed username={username} />
-            <Rightbar user={user} />
+            <ProfileRightbar user={user}/>
           </div>
         </div>
       </div>
