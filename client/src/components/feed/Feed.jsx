@@ -8,7 +8,7 @@ import "./feed.css";
 
 const Feed = ({ username }) => {
   const [posts, setPosts] = useState([]);
-  const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -16,7 +16,9 @@ const Feed = ({ username }) => {
         ? await axios.get("/posts/profile/" + username)
         : await axios.get("posts/timeline/" + user._id);
       setPosts(
-        res.data
+        res.data.sort((p1, p2) => {
+          return new Date(p2.createdAt) - new Date(p1.createdAt);
+        })
       );
     };
     fetchPosts();
@@ -25,7 +27,7 @@ const Feed = ({ username }) => {
   return (
     <div className="feed">
       <div className="feedWrapper">
-        <Share />
+        {(!username || username === user.username) && <Share />}
         {posts.map((p) => (
           <Post key={p._id} post={p} />
         ))}
