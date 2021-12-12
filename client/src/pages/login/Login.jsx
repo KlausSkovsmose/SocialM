@@ -47,7 +47,7 @@ const Login = () => {
               required
               minLength="6"
             />
-            <button className="loginButton">
+            <button className="loginButton" type="submit" disabled={isFetching}>
               {isFetching ? <CircularProgress color="white" size="23px"/> : "Log in" }
             </button>
             <span className="loginForgotPsw">Forgot Password?</span>
